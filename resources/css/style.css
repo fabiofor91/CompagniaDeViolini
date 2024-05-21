@@ -1,0 +1,133 @@
+/* Font  */
+/* font-family: 'Herova', sans-serif;
+font-family: 'Herova Italic', sans-serif; */
+
+
+.font-text {
+    font-family: 'italianaregular', Arial, sans-serif;
+    font-size: large;
+    font-weight: 500;
+}
+
+
+
+.font-title{
+    font-family: 'Herova', sans-serif;
+    font-size: 500%;
+}
+
+.font-sm-title{
+    font-family: 'Herova', sans-serif;
+    font-size: 175%;
+}
+
+
+.bg-custom{
+    height: 125vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.10), rgba(0, 0, 0, 0.50)), url('/public/media/img/Compagnia_Monopoli1.jpeg');
+    /* background: rgb(172,68,7);
+    background: linear-gradient(90deg, rgba(172,68,7,1) 0%, rgba(255,255,255,0) 48%, rgba(172,68,7,1) 100%); */
+    /* background: rgb(167,75,21);
+    background: radial-gradient(circle, rgba(167,75,21,1) 0%, rgba(204,153,133,1) 49%, rgba(144,57,6,1) 100%); */
+    /* background-size: 85%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 63%;
+    /* background-position-x:  */
+}
+
+/* background home 2  */
+.bg-custom2{
+    /* height: auto; */
+    /* height: 125vh; */
+    /* background: rgb(204,153,133); */
+    background-color: #d6a67c;
+    /* background: radial-gradient(circle, rgba(204,153,133,1) 8%, rgba(144,57,6,1) 100%); */
+}
+
+.backgroundImg{
+    height: 97vh;
+    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('/public/media/img/compagnia_monopoli2.jpeg');
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: 1px;
+    box-shadow: 0 0 10px 10px #d6a67c inset;
+    border-radius: 10px;
+}
+
+
+
+.bg-drop{
+    /* background-color: #c79468; */
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    
+}
+
+.w-custom{
+    width: 5% !important;
+}
+
+.localisation{
+    margin-top: 28%;
+}
+
+.local1{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.local2{
+    margin-top: 100px;
+    margin-right: 30px;
+}
+
+.size-custom{
+    font-size: 100px;
+}
+
+.margin-nav{
+    /* margin-top: 15vh; */
+    margin-top: 10vh;
+}
+
+.margin-nav2{
+    margin-top: 17vh;
+}
+
+/* effetto blur navbar  */
+
+.blurNav{
+    backdrop-filter: blur(5px);
+    transition: 1s;
+}
+
+/* hover  */
+.dropdown-item:hover{
+    background-color: #b67e4d9a;
+    
+    
+}
+
+#nav-link:hover{
+    background-color: #b67e4d9a;
+    
+}
+
+#btn:hover{
+    transform: scale(1.2);
+}
+
+/* MEDIA QUERIES  */
+
+@media screen and (max-width: 600px){
+    .backgroundImg{
+        height: 25vh;
+        background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('/public/media/img/compagnia_monopoli2.jpeg');
+        background-size: cover;
+        background-position-y: center;
+        background-position-x: 1px;
+        box-shadow: 0 0 10px 10px #d6a67c inset;
+        border-radius: 10px;
+    }
+}
