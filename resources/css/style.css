@@ -9,11 +9,17 @@ font-family: 'Herova Italic', sans-serif; */
     font-weight: 500;
 }
 
-
-
 .font-title{
     font-family: 'Herova', sans-serif;
+    /* font-size: 500%; */
+}
+
+.size-big{
     font-size: 500%;
+}
+
+.size-med{
+    font-size: 400%;
 }
 
 .font-sm-title{
@@ -23,8 +29,8 @@ font-family: 'Herova Italic', sans-serif; */
 
 
 .bg-custom{
-    height: 125vh;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.10), rgba(0, 0, 0, 0.50)), url('/public/media/img/Compagnia_Monopoli1.jpeg');
+    height: 150vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.20), rgba(0, 0, 0, 0.10)), url('/public/media/img/8H1A3177.JPG');
     /* background: rgb(172,68,7);
     background: linear-gradient(90deg, rgba(172,68,7,1) 0%, rgba(255,255,255,0) 48%, rgba(172,68,7,1) 100%); */
     /* background: rgb(167,75,21);
@@ -41,17 +47,21 @@ font-family: 'Herova Italic', sans-serif; */
     /* height: auto; */
     /* height: 125vh; */
     /* background: rgb(204,153,133); */
-    background-color: #d6a67c;
+    background-color: #dbaa72;
+    /* background-image: url('/public/media/img/cutted.JPG');
+    background-size: contain; */
     /* background: radial-gradient(circle, rgba(204,153,133,1) 8%, rgba(144,57,6,1) 100%); */
 }
 
 .backgroundImg{
-    height: 97vh;
-    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('/public/media/img/compagnia_monopoli2.jpeg');
-    background-size: cover;
-    background-position-y: center;
-    background-position-x: 1px;
-    box-shadow: 0 0 10px 10px #d6a67c inset;
+    height: 130vh;
+    /* background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('/public/media/img/compagnia_monopoli2.jpeg'); */
+    background-image: url('/public/media/img/cutted2.jpeg');
+    /* background-size: cover; */
+    background-size: 100%;
+    background-position: center;
+    /* background-position-x: 1px; */
+    box-shadow: 0 0 10px 10px #dbaa72 inset;
     border-radius: 10px;
 }
 
@@ -60,8 +70,9 @@ font-family: 'Herova Italic', sans-serif; */
 .bg-drop{
     /* background-color: #c79468; */
     background-color: transparent;
-    backdrop-filter: blur(2px);
-    
+    /* -webkit-backdrop-filter: blur(5px); */
+    /* backdrop-filter: blur(5px); */
+    backdrop-filter: brightness(60%);
 }
 
 .w-custom{
@@ -95,6 +106,18 @@ font-family: 'Herova Italic', sans-serif; */
     margin-top: 17vh;
 }
 
+.position-custom{
+    position: fixed;
+    top: 15%;
+    right: 1%;
+    height: 10%;
+    width: 5%;
+}
+
+.underline-none{
+    text-decoration: none;
+}
+
 /* effetto blur navbar  */
 
 .blurNav{
@@ -103,15 +126,14 @@ font-family: 'Herova Italic', sans-serif; */
 }
 
 /* hover  */
-.dropdown-item:hover{
-    background-color: #b67e4d9a;
-    
-    
+#dropdown-item:hover{
+    background: rgb(78, 67, 55);
+    background: linear-gradient(90deg, rgba(78,67,55,0) 0%, rgba(78,67,55,0.8743872549019608) 100%);
 }
 
 #nav-link:hover{
-    background-color: #b67e4d9a;
-    
+    background: rgb(78, 67, 55);
+    background: linear-gradient(270deg, rgba(78, 67, 55, 0) 0%, rgba(78, 67, 55, 0.8743872549019608) 100%);
 }
 
 #btn:hover{
@@ -130,4 +152,17 @@ font-family: 'Herova Italic', sans-serif; */
         box-shadow: 0 0 10px 10px #d6a67c inset;
         border-radius: 10px;
     }
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px){
+    #menu{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    #menu{
+        width: 17%;
+    }
+    
 }
